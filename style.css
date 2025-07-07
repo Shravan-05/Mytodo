@@ -1,0 +1,162 @@
+  html,
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background-color: rgb(2, 4, 49);
+      flex-direction: column;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    #container {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      margin-top: 20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+    }
+
+    #input-box {
+      border: 1px solid  rgb(131, 140, 255);
+      width: 100%;
+      display: flex;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      background-color: rgb(24, 28, 72);
+    }
+
+    #input-box input {
+      flex: 1;
+      height: 40px;
+      outline: none;
+      font-size: 20px;
+      padding-left: 10px;
+      border: none;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      flex-shrink: 0;
+      background: none;
+      color: white;
+    }
+
+    #add {
+      width: 110px;
+      border-radius: 20px;
+      background: none;
+      border: none;
+      background-color: rgb(131, 140, 255);
+      font-size: clamp(0.7rem, 2vw, 1.5rem);
+      display: block;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .todos {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      height: 35px;
+      border-radius: 20px;
+              border: 1px solid  rgb(131, 140, 255);
+    }
+
+    .todos input {
+      flex: 1;
+      outline: none;
+      font-size: 20px;
+      padding-left: 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: clamp(0.5rem, 5vw, 1.5rem);
+  background: none;
+      color: white;
+    
+
+    }
+
+    .delete {
+      width: 30px;
+      border-radius: 20px;
+      background: none;
+      border: none;
+      background-color: rgb(240, 80, 22);
+      font-size: clamp(0.7rem, 2vw, 1.5rem);
+      display: block;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .edit {
+      width: 50px;
+      border-radius: 20px;
+      background: none;
+      border: none;
+      background-color: rgb(131, 140, 255);
+      font-size: clamp(0.7rem, 2vw, 1.2rem);
+      display: block;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .buttons {
+      width: fit-content;
+      display: flex;
+      gap: 5px;
+    }
+    .title
+    {
+      font-size: clamp(2rem,5vw,3rem);
+      background: linear-gradient(90deg, #6979b8, #7ce7b8); /* your gradient colors */
+  -webkit-background-clip: text;  /* clips background to text */
+  -webkit-text-fill-color: transparent; /* makes text fill transparent so background shows */
+  background-clip: text;  /* for some browsers */
+  color: transparent;      /* fallback */
+    }
+
+    @media screen and (max-width:500px) {
+      #input-box {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 5px;
+        gap: 5px;
+
+      }
+
+      #add {
+        width: 100%;
+        height: 30px;
+      }
+
+      #input-box input {
+        border-radius: 20px;
+
+      }
+
+      .delete {
+        width: 30px;
+        font-size: 15px;
+      }
+
+      .edit {
+        width: 40px;
+        font-size: 13px;
+      }
+
+      .todos {
+        margin-top: 20px;
+        flex-direction: column;
+        height: auto;
+        padding: 8px;
+      }
+
+
+    }
